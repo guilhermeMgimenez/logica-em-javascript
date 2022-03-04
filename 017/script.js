@@ -1,23 +1,17 @@
-function maiorNumero(){
-let valor1, valor2, valor3;
-valor1 = 02
-valor2 = 14
-valor3 = 25
+function maiorNumero(valor1 = 0, valor2 = 0, valor3 = 0){
+valor1 = parseFloat(valor1)
+valor2 = parseFloat(valor2)
+valor3 = parseFloat(valor3)
+
+
 
 if(valor1 > valor2 && valor1 > valor3){
-    console.log("número 1 maior");
+    document.querySelector("#resultado").innerHTML = "o numero dado foi " + valor1 
 }
 else if(valor2 > valor1 && valor2 > valor3){
-    console.log("número 2 maior")
-}
+    document.querySelector("#resultado").innerHTML = "o numero dado foi " + valor2
+ }
 else if(valor3 > valor1 && valor3 > valor2){
-    console.log("número 3 maior")
+    document.querySelector("#resultado").innerHTML = "o numero dado foi " + valor3
+ }
 }
-}
-maiorNumero()
-function soma(n1, n2){
-    let total
-    total = n1 + n2
-    console.log(total)
-}
-soma(3,8)

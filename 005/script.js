@@ -1,8 +1,8 @@
-function conversor(){
-let m, cm
-console.log("escreva um número em metros:")
-m = 5
-cm = m * 100
-console.log("seu valor mede",cm, "centimetros")
+function conversor(m = 0,cm = 0) {
+    m = parseFloat(m)
+    cm = parseFloat(cm)
+
+    cm = m * 100
+
+    document.querySelector("#resultado").innerHTML = "A conversão fica: " + cm
 }
-conversor()

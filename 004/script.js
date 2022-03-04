@@ -1,5 +1,8 @@
 function media(n1,n2,n3,n4){
-
+    n1 = parseFloat(n1)
+    n2 = parseFloat(n2)
+    n3 = parseFloat(n3)
+    n4 = parseFloat(n4)
    
 
     let media
@@ -20,12 +23,8 @@ function media(n1,n2,n3,n4){
 
     media = (n1 + n2 + n3 + n4) / 4
 
-   
+    document.querySelector("#resultado").innerHTML = "A media dos numeros é: " + media
 
     console.log("Sua média foi de:", media)
 
 }
-
-
-
-media(7,9,8,10)

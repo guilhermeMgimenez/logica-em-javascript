@@ -1,7 +1,4 @@
-function mostrar(){
-let n1
-console.log("Imforme um número")
-n1 = 10
-console.log("O numero informado é ", n1)
+function mostrar(n1 = 0){
+    document.querySelector("#resultado").innerHTML = "o numero dado foi " + n1 
+console.log("O numero informado é " , n1) 
 }
-mostrar()
