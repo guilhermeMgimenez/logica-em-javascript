@@ -15,9 +15,10 @@ function area (raio){
 
 
     console.log ("area =", area)
+    document.querySelector("#resultado").innerHTML = "a area fica: " + area
+
 
 }
 
 
 
-area(5)

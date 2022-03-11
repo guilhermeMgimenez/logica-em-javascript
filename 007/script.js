@@ -1,21 +1,25 @@
-function area (lado){
+let area, dobro
 
-    let area, dobro
+    area = parseFloat (area)
+
+    dobro = parseFloat (dobro)
 
 
 
-    console.log("Digite o lado do quadrado:")
+    document.querySelector("#resultado").innerHTML = "Digite o lado do quadrado:" + area
 
 
 
     if (area = lado * lado) {
 
+
+
     dobro = area * 2
 
-    console.log("O dobro da area do quadrado é:", dobro)
+
+
+    document.querySelector("#resultado").innerHTML = "O dobro da area do quadrado é:" + dobro
 
     }
 
 }
-
-area (4)
